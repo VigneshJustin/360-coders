@@ -243,6 +243,7 @@ section .para2 {
 .aboutlist1 p {
  text-align: left;
  padding: 5px 0;
+ text-align: center;
 }
 .aboutlist2 {
   text-align: justify;
@@ -325,6 +326,11 @@ section .para2 {
   font-size: 56px;
   margin-left: 45%;
   color: #822de2;
+}
+@media only screen and (max-width:414px) {
+  .flex1 div i {
+    margin-left: 40% !important;
+  }
 }
 .flex1 div h3 {
   text-align: center;
