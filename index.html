@@ -53,7 +53,7 @@
       }
     </style>
   </head>
-  <body id="scrolltopp" onload="scrolltop();scrollbottom();">
+  <body id="scrolltopp">
 
     <div id="menu">
       <ul>
@@ -491,12 +491,12 @@
 <br>
 <footer id="scrollbottomm">360 Coders &copy; Copyright 2018, All Rights Reserved.</footer>
 <!--scroll up section -->
-<a  id="scrolltopicon" style="color:black;text-decoration:none;" href="#scrolltopp"><i class="fa fa-chevron-circle-up fa-chevron" aria-hidden="true"></i></a>
+<a  id="scrolltopicon" style="color:black;text-decoration:none;display:none;" href="#scrolltopp"><i class="fa fa-chevron-circle-up fa-chevron" aria-hidden="true"></i></a>
 <!--scroll down section -->
-<a id="scrollbottomicon" style="color:black;text-decoration:none;display:none;" href="#scrollbottomm"><i class="fa fa-chevron-circle-down" aria-hidden="true"></i></a>
+<a id="scrollbottomicon" style="color:black;text-decoration:none;display:none;" href="#scrollbottomm"><i class="fa fa-chevron-circle-down fa-chevron" aria-hidden="true"></i></a>
 <!-- javascript secction-->
 <script>
-window.onscroll = function() {myFunction()};
+window.onscroll = function() {myFunction();scrolltop();scrollbottom();};
 
 function myFunction() {
 if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
@@ -506,36 +506,20 @@ if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
 }
 }
 function scrolltop() {
-//update soon
+  if ( document.body.scrollTop == 0 || document.documentElement.scrollTop == 0 ) {
+
+  }
+  if (document.body.scrollTop <= document.body.scrollHeight/2  || document.documentElement.scrollTop <= document.documentElement.scrollHeight/2 ) {
+    document.getElementById("scrollbottomicon").style.display = "block";
+    document.getElementById("scrolltopicon").style.display = "none";
+  }
 }
 function scrollbottom() {
-//update soon
+if (document.body.scrollTop >= document.body.scrollHeight/2  || document.documentElement.scrollTop >= document.documentElement.scrollHeight/2 ) {
+  document.getElementById("scrolltopicon").style.display = "block";
+  document.getElementById("scrollbottomicon").style.display = "none";
 }
-//jquery smoth scroll
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
-
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
+}
 </script>
   </body>
 </html>
