@@ -53,7 +53,7 @@
       }
     </style>
   </head>
-  <body>
+  <body id="scrolltopp" onload="scrolltopbottom()">
 
     <div id="menu">
       <ul>
@@ -95,7 +95,7 @@
      <br>
      <div class="contactinfo">
        <div class="number">
-         <p><i class="fa fa-mobile" aria-hidden="true"></i> +91 77081 91888</p>
+         <p><i style="color:white;" class="fa fa-mobile" aria-hidden="true"></i> +91 77081 91888</p>
        </div>
        <div class="email">
          <a href="mailto:info@360coders.in"><i class="fa fa-envelope-o" aria-hidden="true"></i> info@360coders.in</a>
@@ -104,7 +104,7 @@
          <a href="https://www.facebook.com/360coders" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
          <a href="https://www.instagram.com/360coders/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
          <a href="https://twitter.com/360coders_" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-        <a href="https://plus.google.com/101974664000199970157" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+        <a  id="bookmarkabout" href="https://plus.google.com/101974664000199970157" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
        </div>
      </div>
      <br>
@@ -113,7 +113,7 @@
      <br class="linkbreak1">
     </section>
     <!--About secton -->
-    <div id="bookmarkabout" class="about">
+    <div class="about">
       <div class="about1">
         <div class="aboutwho">
           <h3 style="font-size:36px;">Who We Are</h3>
@@ -158,7 +158,7 @@
           </div>
       </div>
       <!-- responsive flex services section -->
-        <h3 id="bookmarkservices" class="services">Our Services</h3>
+        <h3 id="bookmarkservices"  class="services">Our Services</h3>
       <div class="flex">
           <div class="flex1">
             <div class="web">
@@ -176,17 +176,17 @@
                 <h3>Hire Software  Developer</h3>
                 <p>We have tremendous experienced Software Developers with varied skill sets, available for hire at 360 Coders. You can hire our developers for Software solutions such as, game developments, web development and designs, mobile application developments for Android and iOS platforms.</p>
             </div>
-            <div class="co">
+            <div id="co" class="co">
                 <i class="fa fa-desktop" aria-hidden="true"></i>
                 <h3>CO-Development Services</h3>
                 <p>Our passionate and versatile co-developers of various design and development services have hands-on experience in developing high performance oriented software solutions and also labours highly complex solutions and co-ordinate with your existing team to deliver the project, beforehand.</p>
             </div>
-            <div class="devTeam">
+            <div id="devTeam" class="devTeam">
                 <i class="fa fa-grav" aria-hidden="true"></i>
                 <h3>Hire Dedicated Development Team</h3>
                 <p>At 360 Coders, you can hire our experienced and professional, development and support team for your latest in-demand software solutions & mobile application development. Our expertise team of developers co-operate and bring out the innovative ideas and deliver you a professional work.</p>
             </div>
-            <div class="engi">
+            <div id="engi" class="engi">
                 <i class="fa fa-graduation-cap" aria-hidden="true"></i>
                 <h3>Engineering Design Services</h3>
                 <p>360 Coders' engineering design service affords you all types of engineering services at high quality and at an economical rate, through our best engineers in the market. We use latest technologies to our design services and ensure to deliver it on-time with 100% client satisfaction.</p>
@@ -453,7 +453,7 @@
   </div>
 <br>
 <!-- footer section-->
-<div style="background:#688df9;" class="footersec">
+<div style="padding-bottom: 20px;" class="footersec">
   <div class="footersec1">
     <div class="address">
       <ul>
@@ -469,27 +469,31 @@
     <div class="servi">
       <h2 style="text-align:center;">services</h2>
       <ul>
-        <li>Web/Mobile Application Development</li>
-        <li>Application Modernization</li>
-        <li>Hire Software Developer</li>
-        <li>CO-Development Services</li>
-        <li>Hire Dedicated Development Team</li>
-        <li>Engineering Design Services</li>
+        <li><a href="#expertweb">Web/Mobile Application Development</a></li>
+        <li><a href="#expertapp">Application Modernization</a></li>
+        <li><a href="#bookmarkcontact">Hire Software Developer</a></li>
+        <li><a href="#co">Co-Development Services</a></li>
+        <li><a href="#devTeam">Hire Dedicated Development Team</a></li>
+        <li><a href="#engi">Engineering Design Services</a></li>
       </ul>
     </div>
     <div class="socialcontact">
       <ul>
         <li><h2 style="text-align:center;">Follow here</h2> </li>
-        <li><i class="fa fa-facebook" aria-hidden="true"></i><a href="https://www.facebook.com/360coders"> Facebook</a> </li>
-        <li><i class="fa fa-instagram" aria-hidden="true"></i><a href="https://www.instagram.com/360coders/">Instagram</a> </li>
-        <li><i class="fa fa-twitter" aria-hidden="true"></i><a href="https://twitter.com/360coders_">Twitter</a> </li>
-        <li><i class="fa fa-google-plus" aria-hidden="true"></i><a href="https://plus.google.com/101974664000199970157">Google</a> </li>
+        <li><i style="padding-right:5px;" class="fa fa-facebook" aria-hidden="true"></i><a href="https://www.facebook.com/360coders"> Facebook</a> </li>
+        <li><i style="padding-right:5px;" class="fa fa-instagram" aria-hidden="true"></i><a href="https://www.instagram.com/360coders/">Instagram</a> </li>
+        <li><i style="padding-right:5px;" class="fa fa-twitter" aria-hidden="true"></i><a href="https://twitter.com/360coders_">Twitter</a> </li>
+        <li><i style="padding-right:5px;" class="fa fa-google-plus" aria-hidden="true"></i><a href="https://plus.google.com/101974664000199970157">Google</a> </li>
       </ul>
     </div>
   </div>
 </div>
 <br>
-<footer>360 Coders &copy; Copyright 2018, All Rights Reserved.</footer>
+<footer id="scrollbottomm">360 Coders &copy; Copyright 2018, All Rights Reserved.</footer>
+<!--scroll up section -->
+<a style="color:black;text-decoration:none;" href="#scrolltopp"><i id="scrolltopicon" class="fa fa-chevron-circle-up fa-chevron" aria-hidden="true"></i></a>
+<!--scroll down section -->
+<a style="color:black;text-decoration:none;" href="#scrollbottomm"><i id="scrollbottomicon" class="fa fa-chevron-circle-down fa-chevron" aria-hidden="true"></i></a>
 <!-- javascript secction-->
 <script>
 window.onscroll = function() {myFunction()};
@@ -500,6 +504,17 @@ if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
 } else {
     document.getElementById("menu").style.display = "none";
 }
+}
+function scrolltopbottom() {
+  var scrollH = document.body.scrollTop || document.documentElement.scrollTop;
+  if ( scrollH/2 > 0 ) {
+    document.getElementById("scrolltopicon").style.display = "block";
+  }else if ( scrollH > scrollH/2  ) {
+    document.getElementById("scrolltopicon").style.display = "block";
+  }
+  else {
+    document.getElementById("scrolltopicon").style.display = "none";
+  }
 }
 </script>
   </body>
