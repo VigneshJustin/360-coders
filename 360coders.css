@@ -912,5 +912,5 @@ footer {
   position: fixed;
   right: 20px;
   bottom: 10px;
-  display: none;
+  display: block !important;
 }
