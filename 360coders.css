@@ -872,9 +872,15 @@ font-size: 24px;
   .footersec1 div {
     width:100%;
   }
-  .servi ul li  {
-    text-align: left !important;
+  .address ul li {
+    text-align: center !important;
   }
+  .servi ul li  {
+    text-align: center !important;
+  }
+    .socialcontact ul li {
+      text-align: center !important;
+    }
 }
 .socialcontact a {
   text-decoration: none;
