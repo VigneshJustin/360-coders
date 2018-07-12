@@ -53,7 +53,7 @@
       }
     </style>
   </head>
-  <body id="scrolltopp" onload="scrolltopbottom()">
+  <body id="scrolltopp" onload="scrolltop();scrollbottom();">
 
     <div id="menu">
       <ul>
@@ -491,9 +491,9 @@
 <br>
 <footer id="scrollbottomm">360 Coders &copy; Copyright 2018, All Rights Reserved.</footer>
 <!--scroll up section -->
-<a style="color:black;text-decoration:none;" href="#scrolltopp"><i id="scrolltopicon" class="fa fa-chevron-circle-up fa-chevron" aria-hidden="true"></i></a>
+<a  id="scrolltopicon" style="color:black;text-decoration:none;" href="#scrolltopp"><i class="fa fa-chevron-circle-up fa-chevron" aria-hidden="true"></i></a>
 <!--scroll down section -->
-<a style="color:black;text-decoration:none;" href="#scrollbottomm"><i id="scrollbottomicon" class="fa fa-chevron-circle-down fa-chevron" aria-hidden="true"></i></a>
+<a id="scrollbottomicon" style="color:black;text-decoration:none;display:block;" href="#scrollbottomm"><i class="fa fa-chevron-circle-down" aria-hidden="true"></i></a>
 <!-- javascript secction-->
 <script>
 window.onscroll = function() {myFunction()};
@@ -505,16 +505,11 @@ if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     document.getElementById("menu").style.display = "none";
 }
 }
-function scrolltopbottom() {
-  var scrollH = document.body.scrollTop || document.documentElement.scrollTop;
-  if ( scrollH/2 > 0 ) {
-    document.getElementById("scrolltopicon").style.display = "block";
-  }else if ( scrollH > scrollH/2  ) {
-    document.getElementById("scrolltopicon").style.display = "block";
-  }
-  else {
-    document.getElementById("scrolltopicon").style.display = "none";
-  }
+function scrolltop() {
+//update soon
+}
+function scrollbottom() {
+//update soon
 }
 </script>
   </body>
