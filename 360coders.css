@@ -893,3 +893,18 @@ footer {
 .webdev  a:hover {
   text-decoration: underline;
 }
+.servi ul li a {
+  color: black;
+  text-decoration: none;
+}
+.servi ul li a:hover {
+  color: blue !important;
+}
+/*scrool top down section*/
+.fa-chevron {
+  font-size: 70px !important;
+  position: fixed;
+  right: 20px;
+  bottom: 10px;
+  display: none;
+}
