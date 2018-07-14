@@ -866,6 +866,7 @@ font-size: 24px;
   }
   .socialcontact ul li {
       margin-left: -1px !important;
+      text-align: center !important;
   }
 }
 @media only screen and (max-width:768px) {
